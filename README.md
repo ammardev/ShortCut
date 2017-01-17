@@ -4,6 +4,7 @@ Simple URL Shortener script working with php 7.0
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/3mmarg97/ShortCut/blob/master/LICENSE)
 [![AUR](https://img.shields.io/badge/Language-PHP%207.0-green.svg)](https://github.com/3mmarg97/ShortCut)
 
+The script won't work if you don't put the main theme in `themes/` folder
 
 Preview of the [Main Theme](https://github.com/3mmarg97/ShortCut_theme):
 
