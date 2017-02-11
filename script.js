@@ -1,10 +1,5 @@
-var tid = setInterval( function () {
-
-    if ( document.readyState !== 'complete' ) return;
-    clearInterval( tid );
-    var copyBtn = document.querySelector('.copyBtn');
-
-    copyBtn.addEventListener('click', function(event) {
+$(document).ready(function () {
+    $("body").on("click",".copyBtn",function () {
         var copyText = document.querySelector('.copyText');
         copyText.select();
 
@@ -15,10 +10,40 @@ var tid = setInterval( function () {
         } catch (err) {
             console.log('Error: can not copy.');
         }
+
+    });
+    $("body").on("click","[value='Return to home']",function () {
+        window.location.href = window.location.href.split('?')[0];
     });
 
+    $("#menuBtn").click(function () {
+        $("#menu").width("250px");
+    });
 
-}, 100 );
-function home() {
-    window.location.href = window.location.href.split('?')[0];
-}
+    $("#closeBtn").click(function () {
+        $("#menu").width("0");
+    });
+
+    $("[type='submit']").click(function () {
+        postUrl();
+    });
+
+    $("#urlText").keypress(function (e) {
+        if (e.which == 13){
+            $("[type='submit']").click();
+            return false;
+        }
+    });
+
+    function postUrl() {
+        $.ajax({
+            url: "index.php",
+            type: "POST",
+            datatype: "html",
+            data: {url: $("#urlText").val()},
+            success: function (result) {
+                $("#homeForm").html($(result).find("#homeForm"));
+            }
+        });
+    }
+});

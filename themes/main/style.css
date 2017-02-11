@@ -1,0 +1,526 @@
+body {
+    background: url("images/bg.png");
+    -webkit-animation: 100s scroll infinite linear;
+    -moz-animation: 100s scroll infinite linear;
+    -o-animation: 100s scroll infinite linear;
+    animation: 100s scroll infinite linear;
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}
+
+#navBar {
+    height: 50px;
+    position: absolute;
+    width: 90%;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-left: 11px;
+}
+
+#navContainer {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+#logoImage {
+    max-height: 85%;
+    animation: bounceIn 0.6s;
+}
+
+#logoImage:hover {
+    transform: rotate(10deg) scale(1.2);
+}
+
+#spLine {
+    border-right: 1px solid #fafafa;
+    border-left: 1px solid #b4b4b4;
+    height: 90%;
+    margin-left: 12px;
+    margin-right: 12px;
+    animation: bounceIn 0.8s;
+}
+
+#navName {
+    font-size: 1.4em;
+    color: #fafafa;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color=#FFFFFF)";
+    /*IE 8*/
+    text-shadow: 0 0 4px #FFFFFF;
+    /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color=#FFFFFF);
+    /*IE 5.5-7*/
+}
+
+#navOtherSide {
+    position: absolute;
+    right: 0;
+    padding-right: 41px;
+}
+
+/* -- Mobile Start -- */
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+
+    #UpButton {
+        display: none;
+    }
+
+    #inButton {
+        display: none;
+    }
+
+    #menuBtn {
+        color: #fff;
+        font-size: 1.7em;
+    }
+
+    #menuBtn:active {
+        color: #969696;
+    }
+
+    .menu {
+        z-index: 1;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: black;
+        padding-top: 30px;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a {
+        padding: 20px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+
+    .sideMenuButtons {
+        margin-top: 50px;
+    }
+
+    .menu #closeBtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 36px;
+    }
+
+    #homeContent {
+        width: 300px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 20px;
+        resize: both;
+    }
+
+}
+
+/* -- Mobile End -- */
+
+/* -- Tablet Start -- */
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+
+    #UpButton {
+        display: none;
+    }
+
+    #inButton {
+        display: none;
+    }
+
+    #menuBtn {
+        color: #fff;
+        font-size: 1.7em;
+    }
+
+    #menuBtn:active {
+        color: #969696;
+    }
+
+    .menu {
+        z-index: 1;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: black;
+        padding-top: 30px;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a {
+        padding: 20px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+
+    .sideMenuButtons {
+        margin-top: 50px;
+    }
+
+    .menu #closeBtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 36px;
+    }
+
+    #homeContent {
+        width: 400px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 20px;
+        resize: both;
+    }
+
+}
+
+/* -- Tablet End -- */
+
+/* -- Desktop And Laptop Start --*/
+
+@media only screen and (min-width: 769px) {
+
+    #UpButton {
+        background-color: #1abc9c;
+        width: 160px;
+        border: 2px solid #1abc9c;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 10px 30px 10px 30px;
+        color: #ffffff;
+        font-size: 1em;
+    }
+
+    #UpButton:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #UpButton:focus {
+        outline: 0;
+    }
+
+    #UpButton:active {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #inButton {
+        background-color: rgba(0, 0, 0, 0);
+        width: 160px;
+        border: 2px solid #1abc9c;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding: 10px 30px 10px 30px;
+        color: #ffffff;
+        font-size: 1em;
+    }
+
+    #inButton:hover {
+        background-color: #1abc9c;
+        border-color: #1abc9c;
+    }
+
+    #inButton:focus {
+        outline: 0;
+    }
+
+    #inButton:active {
+        background-color: #16a085;
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #homeContent {
+        width: 500px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 20px;
+        resize: both;
+    }
+
+}
+
+/* -- Desktop And Laptop End --*/
+
+.transparentLayer {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.floatingDiv {
+    z-index: 5;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    background: black;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color=#000000)";/*IE 8*/
+    -moz-box-shadow: 0 4px 3px -1px rgba(0,0,0,0.5);/*FF 3.5+*/
+    -webkit-box-shadow: 0 4px 3px -1px rgba(0,0,0,0.5);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 0 4px 3px -1px rgba(0,0,0,0.5);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+
+header {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
+
+header p, h1 {
+    color: #fafafa;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color=#FFFFFF)";
+    /*IE 8*/
+    text-shadow: 0 0 4px #FFFFFF;
+    /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color=#FFFFFF);
+    /*IE 5.5-7*/
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background: #1abc9c;
+    width: 85%;
+    color: #FFF;
+    padding: 17px;
+    font-weight: bolder;
+    font-size: 1em;
+    margin: 0 auto;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background: #16a085;
+}
+
+input[type="submit"]:active {
+    background-color: #14725d;
+}
+
+input[type="button"] {
+    background: #1abc9c;
+    width: 85%;
+    color: #FFF;
+    padding: 17px;
+    font-weight: bolder;
+    font-size: 1em;
+    margin: 0 auto 10px auto;
+    display: block;
+
+}
+
+input[type="button"]:hover {
+    background: #16a085;
+}
+
+input[type="button"]:active {
+    background-color: #14725d;
+}
+
+#urlText:focus {
+    border-left: 5px solid #16a085;
+    -webkit-transition: 0.4s ease;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    color: #fafafa;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color=#FFFFFF)";
+    /*IE 8*/
+    text-shadow: 0 0 4px #FFFFFF;
+    /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color=#FFFFFF);
+    /*IE 5.5-7*/
+}
+
+/* -- Logo BounceIn Animation Start -- */
+
+@keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-ms-keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* -- Logo BounceIn Animation End -- */
+
+/* -- Background Scroll Animation Start --*/
+
+@-webkit-keyframes scroll {
+    100% {
+        background-position: 0 -3000px;
+    }
+}
+
+@-moz-keyframes scroll {
+    100% {
+        background-position: 0 -3000px;
+    }
+}
+
+@-o-keyframes scroll {
+    100% {
+        background-position: 0 -3000px;
+    }
+}
+
+@-ms-keyframes scroll {
+    100% {
+        background-position: 0 -3000px;
+    }
+}
+
+@keyframes scroll {
+    100% {
+        background-position: 0 -3000px;
+    }
+}
+
+/* -- Background Scroll Animation End --*/

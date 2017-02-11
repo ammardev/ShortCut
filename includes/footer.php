@@ -1,3 +1,3 @@
-<div class="footer">
+<footer>
 	<p>ShortCut developed by Ammar Al-khawaldeh .</p>
-</div>
+</footer>

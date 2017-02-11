@@ -63,6 +63,15 @@
 			} else throw new Exception('Can not connect to the database .');
 		}
 
+		public function scut_urls_redirect() {
+			if ($this->connect()) {
+				$sql = $this->handle->prepare('SELECT link FROM urls WHERE alias = :alias');
+				$sql->execute(array(':alias' => $_GET['u']));
+
+				header('Location: http://' . $sql->fetch()[0]);
+			}
+		}
+
 		function __destruct() {
 			unset($this->handle);
 		}

@@ -1,23 +1,23 @@
-<div class="navBar">
-	<div class="navContainer">
+<div id="navBar">
+	<div id="navContainer">
 		<!-- TODO: it will convert to user photo when user is signed in . -->
-		<img class='logo' src="themes/shortcut2016/images/logo.png"/>
-		<div class="line"></div>
+		<img id='logoImage' src="themes/<?=$info['theme']?>/images/logo.png"/>
+		<div id="spLine"></div>
 
 		<!-- TODO: it will convert to user name when user is signed in . -->
-		<span class="name"><h4><?= $info['name']?></h4></span>
+		<span id="navName"><?= $info['name']?></span>
 
-		<div class="navOtherSide">
-			<button type="button" class="inButton"><i class="fa fa-sign-in" aria-hidden="true"></i>
+		<div id="navOtherSide">
+			<button type="button" id="inButton"><i class="fa fa-sign-in" aria-hidden="true"></i>
 				&nbsp;Sign in
 			</button>
-			<button type="button" class="UpButton"><i class="fa fa-user-plus"
+			<button type="button" id="UpButton"><i class="fa fa-user-plus"
 			                                          aria-hidden="true"></i>
 				&nbsp;Sign up
 			</button>
 
 
-			<div class="menuBtn" onclick="openNav()">
+			<div id="menuBtn">
 				<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
 			</div>
 
