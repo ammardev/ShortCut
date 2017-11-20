@@ -8,6 +8,17 @@ body {
     margin: 0;
 }
 
+a {
+    color: #16a085;
+    text-shadow: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #14725d;
+}
+
 #navBar {
     height: 50px;
     position: absolute;
@@ -290,10 +301,10 @@ body {
     top: 50%;
     left: 50%;
     padding: 20px;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color=#000000)";/*IE 8*/
-    -moz-box-shadow: 0 4px 3px -1px rgba(0,0,0,0.5);/*FF 3.5+*/
-    -webkit-box-shadow: 0 4px 3px -1px rgba(0,0,0,0.5);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
-    box-shadow: 0 4px 3px -1px rgba(0,0,0,0.5);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color=#000000)"; /*IE 8*/
+    -moz-box-shadow: 0 4px 3px -1px rgba(0, 0, 0, 0.5); /*FF 3.5+*/
+    -webkit-box-shadow: 0 4px 3px -1px rgba(0, 0, 0, 0.5); /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 0 4px 3px -1px rgba(0, 0, 0, 0.5); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 

@@ -51,8 +51,7 @@
 				$checkedUrl = $this->urlChecker($url);
 				if ($checkedUrl !== false) {
 					$alias = $this->aliasCreator();
-					$sql = $this->handle->prepare('INSERT INTO urls(userid,alias,link) VALUES (:id,:alias,:link)');
-					$sql->bindParam(':id', $userId);
+					$sql = $this->handle->prepare('INSERT INTO urls(alias,link) VALUES (:alias,:link)');
 					$sql->bindParam(':alias', $alias);
 					$sql->bindParam(':link', $checkedUrl);
 
